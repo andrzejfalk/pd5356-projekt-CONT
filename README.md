@@ -1,10 +1,9 @@
 # pd5356-projekt-CONT
 
-## Opis projektu
 
 Projekt przedstawia mikroserwis do analizy plików FASTQ z wykorzystaniem FastQC oraz udostępniania wyników przez NGINX.
 
-## Wykorzystane technologie
+# Wykorzystane technologie
 
 * Docker
 * Docker Compose
@@ -12,7 +11,7 @@ Projekt przedstawia mikroserwis do analizy plików FASTQ z wykorzystaniem FastQC
 * NGINX
 * Ubuntu 22.04
 
-## Struktura projektu
+#Struktura projektu
 
 * Dockerfile
 * docker-compose.yml
@@ -20,19 +19,18 @@ Projekt przedstawia mikroserwis do analizy plików FASTQ z wykorzystaniem FastQC
 * input/
 * images/
 
-## Uruchomienie
+# Uruchomienie
 
 ```bash
 docker compose up --build
 ```
 
-Raport FastQC dostępny jest pod adresem:
+Raport FastQC - adres:
 
 ```text
 http://localhost:8080
 ```
 
-## Architektura
 
 Projekt wykorzystuje:
 
@@ -41,7 +39,6 @@ Projekt wykorzystuje:
 * wolumen Docker `fastqc_results`,
 * sieć Docker `fastqc_network`.
 
-## Wynik
 
 Raport FastQC został wygenerowany poprawnie i udostępniony przez NGINX.
 
